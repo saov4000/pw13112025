@@ -8,33 +8,40 @@ let expressao = "";
 function somar() {
     valor1 = parseInt(document.getElementById("valor1").value);
     valor2 = parseInt(document.getElementById("valor2").value);
-    resultado = valor1+valor2;
-    document.getElementById("resultado").innerHTML = resultado; 
+    resultado = valor1 + valor2;
+    document.getElementById("resultado").innerHTML = resultado;
 }
 
-function subtrair(){
+function subtrair() {
     valor1 = parseInt(document.getElementById("valor1").value);
     valor2 = parseInt(document.getElementById("valor2").value);
-    resultado = valor1-valor2;
-    document.getElementById("resultado").innerHTML = resultado; 
+    resultado = valor1 - valor2;
+    document.getElementById("resultado").innerHTML = resultado;
 }
 
-function multiplicar(){
+function multiplicar() {
     valor1 = parseInt(document.getElementById("valor1").value);
     valor2 = parseInt(document.getElementById("valor2").value);
-    resultado = valor1*valor2;
-    document.getElementById("resultado").innerHTML = resultado; 
+    resultado = valor1 * valor2;
+    document.getElementById("resultado").innerHTML = resultado;
 }
 
-function dividir(){
+function dividir() {
     valor1 = parseInt(document.getElementById("valor1").value);
     valor2 = parseInt(document.getElementById("valor2").value);
-    resultado = valor1/valor2;
-    document.getElementById("resultado").innerHTML = resultado; 
+    resultado = valor1 / valor2;
+    document.getElementById("resultado").innerHTML = resultado;
 }
 
-function pegar(caracter){
-    expressao = expressao+caracter
-    alert(expressao)
-    document.getElementById("valor").value = expressao
+function pegar(caracter) {
+    if (caracter != "=") {
+        expressao = expressao + caracter
+        document.getElementById("valor").value = expressao
+    } else {
+        resultado = eval(expressao)
+        document.getElementById("valor").value = resultado
+    }
+
+    
+    
 }

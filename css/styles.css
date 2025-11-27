@@ -1,55 +1,49 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 6rem;
-}
-.container{
-    width: 100%;
-    margin: 2rem;
-    border: 1px solid #c5c5c5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.calculadora{
-    border: 2px solid #0f0e0e;
-    border-radius: .3rem;
-    margin: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15rem;
-    flex-direction: column;
-    gap:0.3rem;
-}
-.calculadora h3{
-    text-align: center;
-}
-.botoes{
-    width: 30%;
+.container {
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap:0.1rem;
+    justify-content: center;
+    align-items: center;
 }
-button{
+.calculadora {
+    width: 12rem;
+    border: 1px solid rgb(18, 17, 17);
+    border-radius: .3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora h3 {
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
     width: 2rem;
     height: 2rem;
     background-color: #c5c5c5;
     border-radius: 0.2rem;
     border-color: #c5c5c5;
 }
-input{
-    width: 80%;
+
+input {
     border-radius: 0.2rem;
     height: 1.5rem;
+    text-align: right;
+    margin-top: 1rem;
 }
