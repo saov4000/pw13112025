@@ -10,10 +10,27 @@
 
 <body>
     <div class="container">
-        <input id="valor1"> <br>
-        <input id="valor2"> <br>
-        <button onclick="calcular()">Calcular</button> <br>
-        <h3 id="resultado">0</h3>
+        <div class="calculadora">
+            <input id="valor"> <br>
+            <div class="botoes">
+                <button onclick="pegar('1')">1</button>
+                <button onclick="pegar(2)">2</button>
+                <button onclick="pegar(3)">3</button>
+                <button onclick="pegar(4)">4</button>
+                <button onclick="pegar(5)">5</button>
+                <button onclick="pegar(6)">6</button>
+                <button onclick="pegar(7)">7</button>
+                <button onclick="pegar(8)">8</button>
+                <button onclick="pegar(9)">9</button>
+                <button onclick="pegar(0)">0</button>
+                <button onclick="pegar('+')">+</button>
+                <button onclick="pegar('-')">-</button>
+                <button onclick="pegar('*')">x</button>
+                <button onclick="pegar('/')">:</button>
+                <button onclick="pegar('=')">=</button>
+            </div>
+            <h3 id="resultado">0</h3>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>

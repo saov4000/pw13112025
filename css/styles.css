@@ -19,3 +19,37 @@ html{
     justify-content: center;
     align-items: center;
 }
+.calculadora{
+    border: 2px solid #0f0e0e;
+    border-radius: .3rem;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    flex-direction: column;
+    gap:0.3rem;
+}
+.calculadora h3{
+    text-align: center;
+}
+.botoes{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:0.1rem;
+}
+button{
+    width: 2rem;
+    height: 2rem;
+    background-color: #c5c5c5;
+    border-radius: 0.2rem;
+    border-color: #c5c5c5;
+}
+input{
+    width: 80%;
+    border-radius: 0.2rem;
+    height: 1.5rem;
+}
